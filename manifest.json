@@ -12,11 +12,21 @@
         "256": "icons/256.png",
         "512": "icons/512.png"
     },
+    "action": {
+        "default_popup": "popup.html"
+    },
     "content_scripts": [
         {
-            "matches": ["https://github.com/*", "https://github-dev.cs.illinois.edu/*"],
-            "js": ["js/content.js"],
+            "matches": [
+                "https://github.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ],
             "run_at": "document_start"
         }
+    ],
+    "permissions": [
+        "storage"
     ]
 }
