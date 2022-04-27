@@ -21,6 +21,15 @@
         input {
             width: 100px;
         }
+
+        button {
+            cursor: pointer;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
     <script src="js/popup.js"></script>
 </head>
@@ -36,13 +45,16 @@
         <input type="text" id="language-del" list="languages">
     </section>
 
-
-
     <datalist id="languages">
-        <option value="en-us" id="en-us">en-us</option>
-        <option value="en-au" id="en-au">en-au</option>
-        <option value="en-gb" id="en-gb">en-gb</option>
+        <option value="en-us" name="english united states">en-us</option>
+        <option value="en-au" name="english autralian">en-au</option>
+        <option value="en-gb" name="english british">en-gb</option>
     </datalist>
+
+    <section class="actions">
+        <button id="commit-btn" name="submit">Submit</button>
+        <button id="cancel-btn" name="cancel">Cancel</button>
+    </section>
 </body>
 
 </html>
