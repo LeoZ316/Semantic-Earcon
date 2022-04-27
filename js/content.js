@@ -1,4 +1,4 @@
-chrome.storage.local.get({ langAdd: 'en-GB', langDel: 'en-AU' }, ({ langAdd, langDel }) =>
+chrome.storage.local.get({ langAdd: 'en-au', langDel: 'en-gb' }, ({ langAdd, langDel }) =>
 {
     setInterval(() =>
     {
